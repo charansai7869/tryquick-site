@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TryQuick – Preview Before You Buy</title>
+  <meta name="description" content="TryQuick connects buyers with nearby product owners for short preview sessions. Pay a small fee to inspect electronics, bikes, cameras and more before purchasing.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f7f8fa; color: #1a1a2e; line-height: 1.6; }
+    .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 64px 24px 56px; text-align: center; }
+    .logo { font-size: 32px; font-weight: 900; letter-spacing: -1px; margin-bottom: 16px; }
+    .hero h1 { font-size: 26px; font-weight: 700; margin-bottom: 12px; line-height: 1.3; }
+    .hero p { font-size: 16px; opacity: 0.85; max-width: 480px; margin: 0 auto 28px; }
+    .badge { display: inline-block; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); border-radius: 20px; padding: 6px 16px; font-size: 13px; font-weight: 600; margin-bottom: 32px; }
+    .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: white; color: #667eea; font-weight: 700; padding: 14px 28px; border-radius: 32px; text-decoration: none; font-size: 15px; }
+    .btn-secondary { background: rgba(255,255,255,0.15); color: white; border: 1px solid rgba(255,255,255,0.4); font-weight: 600; padding: 14px 28px; border-radius: 32px; text-decoration: none; font-size: 15px; }
+    .container { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+    .section { background: white; border-radius: 16px; padding: 28px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    .section h2 { font-size: 18px; font-weight: 700; color: #1a1a2e; margin-bottom: 16px; }
+    .step { display: flex; gap: 16px; padding: 12px 0; border-bottom: 1px solid #f5f5f5; align-items: flex-start; }
+    .step:last-child { border-bottom: none; padding-bottom: 0; }
+    .step-num { width: 32px; height: 32px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; flex-shrink: 0; }
+    .step-text strong { display: block; font-size: 14px; color: #1a1a2e; margin-bottom: 2px; }
+    .step-text span { font-size: 13px; color: #666; }
+    .category-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 4px; }
+    .cat { background: #f0f0ff; border-radius: 10px; padding: 12px 8px; text-align: center; font-size: 12px; font-weight: 600; color: #667eea; }
+    .fee-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f5f5f5; font-size: 14px; }
+    .fee-row:last-child { border-bottom: none; }
+    .fee-row span { color: #444; }
+    .fee-row strong { color: #16a34a; }
+    .links { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .link-card { background: #f8f8ff; border: 1px solid #e8e8ff; border-radius: 12px; padding: 16px; text-decoration: none; color: #1a1a2e; display: block; }
+    .link-card .link-title { font-size: 14px; font-weight: 700; color: #667eea; margin-bottom: 4px; }
+    .link-card .link-desc { font-size: 12px; color: #666; }
+    .contact { background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 16px; padding: 24px; color: white; text-align: center; }
+    .contact a { color: white; font-weight: 700; }
+    .launch { background: #fff8e1; border: 1px solid #fde68a; border-radius: 12px; padding: 14px 16px; margin-bottom: 20px; font-size: 13px; color: #92400e; text-align: center; font-weight: 600; }
+    footer { text-align: center; padding: 24px; font-size: 12px; color: #999; }
+    footer a { color: #667eea; margin: 0 8px; }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="logo">TryQuick</div>
+  <div class="badge">🚀 Launching in Thane, Maharashtra</div>
+  <h1>Preview Before You Buy.<br>Never Regret a Purchase Again.</h1>
+  <p>Pay a small fee to meet a nearby owner and physically check their product — before spending ₹15,000 on something you haven't touched.</p>
+  <div class="cta-row">
+    <a href="#how-it-works" class="btn-primary">How It Works</a>
+    <a href="mailto:support@tryquick.in" class="btn-secondary">Contact Us</a>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="launch">📍 Currently available in Thane, Navi Mumbai · Expanding soon</div>
+
+  <div class="section" id="how-it-works">
+    <h2>How TryQuick Works</h2>
+    <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Browse Nearby Listings</strong><span>See products listed by verified owners within 10 km of you.</span></div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Pay a Small Preview Fee</strong><span>Fees start at ₹83 — a fraction of what you'd pay for the product.</span></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Meet the Owner &amp; Inspect</strong><span>Meet at a convenient location, examine the product in person or on a video call.</span></div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-text"><strong>Decide With Confidence</strong><span>If you like it, buy from the owner directly. If not, walk away — no pressure.</span></div></div>
+  </div>
+
+  <div class="section">
+    <h2>What Can You Preview?</h2>
+    <div class="category-grid">
+      <div class="cat">📱 Smartphones</div>
+      <div class="cat">💻 Laptops</div>
+      <div class="cat">📷 Cameras</div>
+      <div class="cat">🎧 Audio</div>
+      <div class="cat">🚲 Bikes</div>
+      <div class="cat">🎮 Gaming</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Preview Fee Examples</h2>
+    <div class="fee-row"><span>₹10,000 product (e.g. used iPhone)</span><strong>₹124 preview fee</strong></div>
+    <div class="fee-row"><span>₹30,000 product (e.g. laptop)</span><strong>₹168 preview fee</strong></div>
+    <div class="fee-row"><span>₹60,000 product (e.g. DSLR camera)</span><strong>₹211 preview fee</strong></div>
+    <div class="fee-row"><span>Digital preview (video call)</span><strong>₹29–₹69</strong></div>
+  </div>
+
+  <div class="section">
+    <h2>For Product Owners</h2>
+    <div class="step"><div class="step-num">1</div><div class="step-text"><strong>List Your Product</strong><span>Add photos, condition, and product link. Fee is auto-calculated.</span></div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Accept Preview Requests</strong><span>Confirm a time slot that works for you.</span></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Earn 80% of the Preview Fee</strong><span>Payment is released to your TryQuick wallet after the preview.</span></div></div>
+  </div>
+
+  <div class="section">
+    <h2>Policies &amp; Legal</h2>
+    <div class="links">
+      <a href="/privacy.html" class="link-card"><div class="link-title">Privacy Policy</div><div class="link-desc">How we collect and use your data</div></a>
+      <a href="/terms.html" class="link-card"><div class="link-title">Terms of Service</div><div class="link-desc">Rules governing use of TryQuick</div></a>
+      <a href="/refund.html" class="link-card"><div class="link-title">Refund Policy</div><div class="link-desc">Cancellations, refunds, and penalties</div></a>
+      <a href="/safety.html" class="link-card"><div class="link-title">Safety Guidelines</div><div class="link-desc">How to stay safe during previews</div></a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="contact">
+      <p style="font-size:16px; font-weight:700; margin-bottom:8px;">Get in Touch</p>
+      <p style="font-size:14px; opacity:0.9; margin-bottom:4px;"><a href="mailto:support@tryquick.in">support@tryquick.in</a></p>
+      <p style="font-size:13px; opacity:0.7;">Thane, Maharashtra, India · We respond within 48 hours</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 TryQuick
+  <a href="/privacy.html">Privacy</a>
+  <a href="/terms.html">Terms</a>
+  <a href="/refund.html">Refunds</a>
+  <a href="/safety.html">Safety</a>
+</footer>
+
+</body>
+</html>
