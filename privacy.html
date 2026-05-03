@@ -6,30 +6,38 @@
   <title>Privacy Policy – TryQuick</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f7f8fa; color: #1a1a2e; line-height: 1.7; }
-    .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 48px 24px 40px; text-align: center; }
-    .hero .logo { font-size: 28px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 8px; }
-    .hero h1 { font-size: 22px; font-weight: 600; opacity: 0.92; }
-    .hero .date { font-size: 13px; opacity: 0.7; margin-top: 6px; }
+    :root {
+      --hero-bg: #132218; --hero-mid: #1e3a2a; --accent: #4ade80;
+      --body-bg: #f8f7f3; --card-bg: rgba(255,255,255,0.88);
+      --card-border: rgba(255,255,255,0.55); --divider: #edecea;
+    }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: var(--body-bg); color: #111; line-height: 1.7; }
+    .hero { background: var(--hero-bg); background-image: radial-gradient(ellipse 80% 55% at 50% -5%, var(--hero-mid), transparent 70%); color: white; padding: 48px 24px 40px; text-align: center; }
+    .hero .logo { font-size: 28px; font-weight: 900; letter-spacing: -1px; margin-bottom: 8px; }
+    .logo-dot { color: var(--accent); }
+    .hero h1 { font-size: 22px; font-weight: 700; color: rgba(255,255,255,0.92); }
+    .hero .date { font-size: 13px; color: rgba(255,255,255,0.45); margin-top: 6px; }
     .container { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
-    .section { background: white; border-radius: 16px; padding: 28px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
-    .section h2 { font-size: 17px; font-weight: 700; color: #667eea; margin-bottom: 14px; padding-left: 12px; border-left: 4px solid #667eea; }
+    .section { background: var(--card-bg); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid var(--card-border); border-radius: 18px; padding: 28px; margin-bottom: 20px; box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 6px 20px rgba(0,0,0,0.04); }
+    .section h2 { font-size: 16px; font-weight: 800; color: #111; margin-bottom: 14px; padding-left: 12px; border-left: 3px solid var(--hero-bg); }
     .section p { font-size: 14px; color: #444; margin-bottom: 10px; }
     .section p:last-child { margin-bottom: 0; }
     ul { padding-left: 20px; margin: 8px 0 10px; }
     ul li { font-size: 14px; color: #444; margin-bottom: 6px; }
-    a { color: #667eea; }
-    .highlight { background: #f0f0ff; border-left: 3px solid #667eea; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 14px; color: #333; }
-    .contact-box { background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 12px; padding: 20px; color: white; text-align: center; }
-    .contact-box a { color: white; font-weight: 600; }
-    footer { text-align: center; padding: 24px; font-size: 12px; color: #999; }
-    footer a { color: #667eea; }
+    a { color: #1a3d2b; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+    .highlight { background: rgba(19,34,24,0.05); border-left: 3px solid var(--hero-bg); padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 14px; color: #333; }
+    .contact-box { background: var(--hero-bg); border-radius: 14px; padding: 24px; color: white; text-align: center; }
+    .contact-box a { color: var(--accent); font-weight: 700; }
+    footer { text-align: center; padding: 24px; font-size: 12px; color: #aaa; }
+    footer a { color: #888; margin: 0 8px; text-decoration: none; font-weight: normal; }
+    footer a:hover { color: #111; }
   </style>
 </head>
 <body>
 
 <div class="hero">
-  <div class="logo">TryQuick</div>
+  <div class="logo">TryQuick<span class="logo-dot">.</span></div>
   <h1>Privacy Policy</h1>
   <div class="date">Effective Date: May 2, 2026 &nbsp;·&nbsp; Last Updated: May 2, 2026</div>
 </div>
@@ -39,8 +47,10 @@
   <div class="section">
     <h2>Who We Are</h2>
     <p>TryQuick is a peer-to-peer product preview marketplace operated by Charan Saiyesh Reddy Medapati ("Service Provider", "we", "us"), based in Thane, Maharashtra, India.</p>
-    <p>TryQuick connects buyers who want to physically or digitally examine a product with nearby owners who list their products for short preview sessions. Buyers pay a small preview fee — no goods are sold through the platform itself.</p>
+    <p>TryQuick connects people looking for product previews ("buyers") with people who own those products ("owners"). A <strong>buyer</strong> on TryQuick is not someone purchasing a product — they are someone seeking a preview session. An <strong>owner</strong> is not a seller — they are someone who hosts the preview of a product they own. No goods are sold through TryQuick.</p>
+    <p>For physical previews, buyers are matched with owners nearby based on location. For digital previews (video call), matching is not location-restricted — any owner across India can host a digital preview.</p>
     <p>By using TryQuick, you agree to this Privacy Policy. If you do not agree, please discontinue use of the app and website.</p>
+    <div class="highlight">The Application does not use Artificial Intelligence (AI) technologies to process your data or provide features.</div>
   </div>
 
   <div class="section">
@@ -63,6 +73,7 @@
       <li>App usage patterns and session timestamps</li>
       <li>Push notification token (Firebase FCM)</li>
       <li>Precise location (when permission granted — core feature for nearby matching)</li>
+      <li>Pages visited, time and date of visits, time spent on pages</li>
     </ul>
     <p><strong>Payment information:</strong></p>
     <p>Preview fees are processed by Razorpay, an RBI-authorized payment gateway. We do not store full card numbers, CVV, or UPI PINs. Razorpay handles all payment data under their own privacy policy.</p>
@@ -72,7 +83,7 @@
     <h2>How We Use Your Information</h2>
     <ul>
       <li>Authenticate your identity via OTP login</li>
-      <li>Match buyers with nearby product owners based on location</li>
+      <li>Match buyers with nearby owners for physical previews; match by product availability for digital (video call) previews regardless of location</li>
       <li>Facilitate bookings, slot scheduling, and preview session coordination</li>
       <li>Process preview fee payments and manage escrow via Razorpay</li>
       <li>Verify owner identity for digital preview eligibility (KYC — RBI compliance)</li>
@@ -80,7 +91,8 @@
       <li>Calculate preview fees based on product price</li>
       <li>Manage wallet credits, refunds, and owner payouts</li>
       <li>Detect and prevent fraud, abuse, and policy violations</li>
-      <li>Improve app performance and user experience</li>
+      <li>Analyze aggregated, anonymized usage patterns to improve app performance</li>
+      <li>Contact you with important information, required notices, and service updates</li>
     </ul>
   </div>
 
@@ -89,27 +101,27 @@
     <p>TryQuick uses your device's location to show nearby product listings and match you with owners in your area. Location is a core feature of the service — the app cannot function without it.</p>
     <div class="highlight">We use precise location only while the app is active. We do not track your location in the background.</div>
     <p>Owner home locations are stored on our servers for the distance-based matching feature. Exact addresses are never shown to buyers — only approximate distance and city name are displayed.</p>
+    <p>Aggregated, anonymized location data may be used to analyze user behavior, identify trends, and improve the app's performance and functionality. Anonymized location data may periodically be transmitted to external analytics services.</p>
   </div>
 
   <div class="section">
-    <h2>KYC / Identity Verification</h2>
-    <p>Owners who offer digital preview sessions must upload an Aadhaar card photo and a selfie. This requirement exists because:</p>
-    <ul>
-      <li>RBI regulations require identity verification for peer-to-peer financial payouts</li>
-      <li>Buyers cannot physically verify an owner's identity during a video call — verified identity builds essential trust</li>
-    </ul>
-    <p>KYC documents are stored securely on Cloudflare R2 (encrypted object storage). Access is restricted to our review team only. Documents are not shared with third parties except as required by law.</p>
+    <h2>Identity Verification (Optional)</h2>
+    <p>Owners may voluntarily submit an Aadhaar card photo and a selfie to receive a Verified badge on their profile. This is entirely optional — it is not required to list products or offer digital previews. Completing verification simply signals additional trustworthiness to preview seekers.</p>
+    <p>Submitted documents are stored securely on Cloudflare R2 (encrypted object storage). Access is restricted to our review team only. Documents are not shared with third parties except as required by law.</p>
   </div>
 
   <div class="section">
     <h2>Third-Party Services</h2>
+    <p>The Application uses third-party services that have their own Privacy Policies. Links to their policies are below:</p>
     <ul>
-      <li><strong>Razorpay</strong> — Payment processing and escrow: <a href="https://razorpay.com/privacy/" target="_blank">razorpay.com/privacy</a></li>
-      <li><strong>MSG91</strong> — OTP SMS delivery: <a href="https://msg91.com/privacy-policy" target="_blank">msg91.com/privacy-policy</a></li>
-      <li><strong>Firebase (Google)</strong> — Push notifications: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
-      <li><strong>Cloudflare R2</strong> — Image and document storage: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">cloudflare.com/privacypolicy</a></li>
-      <li><strong>Neon (PostgreSQL)</strong> — Database: <a href="https://neon.tech/privacy-policy" target="_blank">neon.tech/privacy-policy</a></li>
-      <li><strong>Railway</strong> — Backend server hosting: <a href="https://railway.app/legal/privacy" target="_blank">railway.app/legal/privacy</a></li>
+      <li><strong>Razorpay</strong> — Payment processing and escrow: <a href="https://razorpay.com/privacy/" target="_blank" rel="noopener">razorpay.com/privacy</a></li>
+      <li><strong>MSG91</strong> — OTP SMS delivery: <a href="https://msg91.com/privacy-policy" target="_blank" rel="noopener">msg91.com/privacy-policy</a></li>
+      <li><strong>Google Play Services</strong>: <a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener">google.com/policies/privacy</a></li>
+      <li><strong>Google Analytics for Firebase</strong>: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
+      <li><strong>Firebase Crashlytics</strong>: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
+      <li><strong>Cloudflare R2</strong> — Image and document storage: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a></li>
+      <li><strong>Neon (PostgreSQL)</strong> — Database: <a href="https://neon.tech/privacy-policy" target="_blank" rel="noopener">neon.tech/privacy-policy</a></li>
+      <li><strong>Railway</strong> — Backend server hosting: <a href="https://railway.app/legal/privacy" target="_blank" rel="noopener">railway.app/legal/privacy</a></li>
     </ul>
   </div>
 
@@ -119,8 +131,9 @@
     <ul>
       <li><strong>Between users:</strong> When a booking is confirmed, limited contact details (name, phone number) are shared between buyer and owner to facilitate the preview meeting</li>
       <li><strong>Payment processors:</strong> Razorpay receives transaction data to process payments and payouts</li>
-      <li><strong>Legal requirements:</strong> If required by Indian law, court order, or a regulatory body (RBI, law enforcement)</li>
-      <li><strong>Fraud prevention:</strong> Data may be shared with agencies to detect or prevent fraud or abuse</li>
+      <li><strong>Legal requirements:</strong> As required by law, such as to comply with a subpoena or similar legal process, or if required by Indian law, court order, or a regulatory body (RBI, law enforcement)</li>
+      <li><strong>Safety and fraud prevention:</strong> When we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request</li>
+      <li><strong>Trusted service providers:</strong> Third-party providers who work on our behalf, have no independent use of the information, and have agreed to adhere to the rules in this privacy statement</li>
     </ul>
   </div>
 
@@ -132,27 +145,29 @@
       <li>KYC documents: 5 years (RBI regulatory requirement)</li>
       <li>Payment transaction records: 7 years (Indian accounting law)</li>
     </ul>
+    <p>To request deletion of your data, use <strong>Settings → Account Actions → Delete Account</strong> within the app. Financial and KYC records are retained for legal compliance regardless of deletion request.</p>
   </div>
 
   <div class="section">
-    <h2>Your Rights</h2>
+    <h2>Opt-Out Rights</h2>
+    <p>You can stop all collection of information by the Application by uninstalling it. You may use the standard uninstall processes available on your mobile device or via the app marketplace.</p>
     <ul>
-      <li><strong>Access:</strong> Request a copy of your personal data by emailing support@tryquick.in</li>
-      <li><strong>Correction:</strong> Update your profile information within the app at any time</li>
-      <li><strong>Deletion:</strong> Delete your account via Settings → Delete Account. This anonymizes your personal data. Financial and KYC records are retained for legal compliance.</li>
-      <li><strong>Notifications:</strong> Disable push notifications in your device settings or within the app</li>
+      <li><strong>Notifications:</strong> Disable push notifications in your device settings or within the app at any time</li>
       <li><strong>Location:</strong> Revoke location permission in device settings at any time (note: core features require it)</li>
+      <li><strong>Account deletion:</strong> Delete your account via <strong>Settings → Account Actions → Delete Account</strong> within the app</li>
+      <li><strong>Data access:</strong> Request a copy of your personal data via <strong>Settings → Account Actions → Request Data Copy</strong> — downloads a JSON file with all your account data, bookings, ratings, and wallet transactions directly to your device</li>
+      <li><strong>Correction:</strong> Update your profile information within the app at any time</li>
     </ul>
   </div>
 
   <div class="section">
     <h2>Children's Privacy</h2>
-    <p>TryQuick is not intended for users under 18 years of age. We do not knowingly collect personal information from minors. If you believe a minor has created an account, contact us immediately at support@tryquick.in and we will delete the account promptly.</p>
+    <p>TryQuick is not intended for users under 13 years of age. The Service Provider does not knowingly collect personally identifiable information from anyone under 13. If you are a parent or guardian and you are aware that your child under 13 has provided us with personal information, please contact us at <a href="mailto:support@tryquick.in">support@tryquick.in</a> and we will delete it from our servers promptly.</p>
   </div>
 
   <div class="section">
     <h2>Security</h2>
-    <p>We implement industry-standard security measures:</p>
+    <p>The Service Provider is concerned about safeguarding the confidentiality of your information and provides physical, electronic, and procedural safeguards to protect the information we process and maintain:</p>
     <ul>
       <li>HTTPS / TLS for all data in transit</li>
       <li>Encrypted object storage for KYC documents (Cloudflare R2)</li>
@@ -160,25 +175,31 @@
       <li>Role-based database access controls</li>
       <li>Signed URLs for all media (24-hour expiry)</li>
     </ul>
-    <p>If you discover a security vulnerability, please report it responsibly to support@tryquick.in before public disclosure.</p>
+    <p>If you discover a security vulnerability, please report it responsibly through the <strong>Report a Bug</strong> option in Settings within the app before public disclosure.</p>
   </div>
 
   <div class="section">
     <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy as TryQuick evolves. We will notify you of material changes via app notification. Continued use of the app after changes constitutes acceptance of the updated policy. The "Last Updated" date at the top of this page always reflects the current version.</p>
+    <p>This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes by updating this page and, for material changes, via in-app notification. You are advised to consult this Privacy Policy regularly. Continued use of the Application is deemed approval of all changes.</p>
+    <p>This privacy policy is effective as of 2026-04-13.</p>
+  </div>
+
+  <div class="section">
+    <h2>Your Consent</h2>
+    <p>By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us.</p>
   </div>
 
   <div class="section">
     <div class="contact-box">
       <p style="font-size:15px; font-weight:700; margin-bottom:8px;">Questions or Privacy Requests?</p>
-      <p style="font-size:14px; opacity:0.9;">Email us at <a href="mailto:support@tryquick.in">support@tryquick.in</a></p>
-      <p style="font-size:13px; opacity:0.75; margin-top:4px;">We respond within 48 business hours.</p>
+      <p style="font-size:14px; opacity:0.85; margin-bottom:4px;">Email us at <a href="mailto:support@tryquick.in">support@tryquick.in</a></p>
+      <p style="font-size:13px; opacity:0.5; margin-top:4px;">We respond within 48 business hours.</p>
     </div>
   </div>
 
 </div>
 
-<footer>© 2026 TryQuick · <a href="/terms.html">Terms of Service</a> · <a href="/refund.html">Refund Policy</a> · <a href="/safety.html">Safety</a></footer>
+<footer>© 2026 TryQuick · <a href="terms.html">Terms of Service</a> · <a href="refund.html">Refund Policy</a> · <a href="safety.html">Safety</a></footer>
 
 </body>
 </html>

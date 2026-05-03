@@ -6,30 +6,34 @@
   <title>Terms of Service – TryQuick</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f7f8fa; color: #1a1a2e; line-height: 1.7; }
-    .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 48px 24px 40px; text-align: center; }
-    .hero .logo { font-size: 28px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 8px; }
-    .hero h1 { font-size: 22px; font-weight: 600; opacity: 0.92; }
-    .hero .date { font-size: 13px; opacity: 0.7; margin-top: 6px; }
+    :root { --hero-bg: #132218; --hero-mid: #1e3a2a; --accent: #4ade80; --body-bg: #f8f7f3; --card-bg: rgba(255,255,255,0.88); --card-border: rgba(255,255,255,0.55); --divider: #edecea; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: var(--body-bg); color: #111; line-height: 1.7; }
+    .hero { background: var(--hero-bg); background-image: radial-gradient(ellipse 80% 55% at 50% -5%, var(--hero-mid), transparent 70%); color: white; padding: 48px 24px 40px; text-align: center; }
+    .hero .logo { font-size: 28px; font-weight: 900; letter-spacing: -1px; margin-bottom: 8px; }
+    .logo-dot { color: var(--accent); }
+    .hero h1 { font-size: 22px; font-weight: 700; color: rgba(255,255,255,0.92); }
+    .hero .date { font-size: 13px; color: rgba(255,255,255,0.45); margin-top: 6px; }
     .container { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
-    .section { background: white; border-radius: 16px; padding: 28px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
-    .section h2 { font-size: 17px; font-weight: 700; color: #667eea; margin-bottom: 14px; padding-left: 12px; border-left: 4px solid #667eea; }
+    .section { background: var(--card-bg); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid var(--card-border); border-radius: 18px; padding: 28px; margin-bottom: 20px; box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 6px 20px rgba(0,0,0,0.04); }
+    .section h2 { font-size: 16px; font-weight: 800; color: #111; margin-bottom: 14px; padding-left: 12px; border-left: 3px solid var(--hero-bg); }
     .section p { font-size: 14px; color: #444; margin-bottom: 10px; }
     .section p:last-child { margin-bottom: 0; }
     ul { padding-left: 20px; margin: 8px 0 10px; }
     ul li { font-size: 14px; color: #444; margin-bottom: 6px; }
-    a { color: #667eea; }
+    a { color: #1a3d2b; font-weight: 600; }
+    a:hover { text-decoration: underline; }
     .highlight { background: #fff8e1; border-left: 3px solid #f59e0b; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 14px; color: #333; }
-    .contact-box { background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 12px; padding: 20px; color: white; text-align: center; }
-    .contact-box a { color: white; font-weight: 600; }
-    footer { text-align: center; padding: 24px; font-size: 12px; color: #999; }
-    footer a { color: #667eea; }
+    .contact-box { background: var(--hero-bg); border-radius: 14px; padding: 24px; color: white; text-align: center; }
+    .contact-box a { color: var(--accent); font-weight: 700; }
+    footer { text-align: center; padding: 24px; font-size: 12px; color: #aaa; }
+    footer a { color: #888; margin: 0 8px; text-decoration: none; font-weight: normal; }
+    footer a:hover { color: #111; }
   </style>
 </head>
 <body>
 
 <div class="hero">
-  <div class="logo">TryQuick</div>
+  <div class="logo">TryQuick<span class="logo-dot">.</span></div>
   <h1>Terms of Service</h1>
   <div class="date">Effective Date: May 2, 2026 &nbsp;·&nbsp; Last Updated: May 2, 2026</div>
 </div>
@@ -40,13 +44,19 @@
     <h2>1. What TryQuick Is</h2>
     <p>TryQuick is a peer-to-peer product preview marketplace operated by Charan Saiyesh Reddy Medapati ("TryQuick", "we", "us"), based in Thane, Maharashtra, India.</p>
     <p>TryQuick enables buyers to pay a small preview fee to meet a nearby product owner and physically examine their product before making a purchase decision. TryQuick facilitates the booking and payment process — we are not a party to any sale of goods between users.</p>
-    <p>By creating an account or using the TryQuick app or website, you agree to be bound by these Terms of Service. If you do not agree, do not use the service.</p>
+    <p>Upon downloading or utilizing the Application, you are automatically agreeing to the following terms. It is strongly advised that you thoroughly read and understand these terms prior to using the Application.</p>
   </div>
 
   <div class="section">
-    <h2>2. Eligibility</h2>
+    <h2>2. Intellectual Property</h2>
+    <p>Unauthorized copying or modification of the Application, any part of the Application, or our trademarks is strictly prohibited. Any attempts to extract the source code of the Application, translate the Application into other languages, or create derivative versions are not permitted. All trademarks, copyrights, database rights, and other intellectual property rights related to the Application remain the property of the Service Provider.</p>
+    <p>By uploading photos or content to TryQuick, you grant us a non-exclusive, royalty-free licence to display that content within the app for the purposes of operating the service.</p>
+  </div>
+
+  <div class="section">
+    <h2>3. Eligibility</h2>
     <ul>
-      <li>You must be at least 18 years of age to use TryQuick</li>
+      <li>You must be at least 13 years of age to use TryQuick</li>
       <li>You must provide a valid Indian mobile number for OTP verification</li>
       <li>You must not have been previously suspended or banned from TryQuick</li>
       <li>By using TryQuick, you confirm that all information you provide is accurate and complete</li>
@@ -54,26 +64,26 @@
   </div>
 
   <div class="section">
-    <h2>3. User Roles</h2>
+    <h2>4. User Roles</h2>
     <p><strong>Buyers</strong> browse nearby product listings and pay preview fees to examine products from owners in person or via video call.</p>
     <p><strong>Owners</strong> list their products with photos, condition details, and pricing. They agree to meet buyers at scheduled times for preview sessions.</p>
     <p>The same account can switch between buyer and owner roles within the app.</p>
   </div>
 
   <div class="section">
-    <h2>4. Preview Fees and Payments</h2>
+    <h2>5. Preview Fees and Payments</h2>
     <p>Preview fees are calculated by TryQuick based on the listed product's market price:</p>
     <ul>
       <li><strong>Physical preview fee:</strong> ₹83 – ₹353 depending on product price</li>
       <li><strong>Digital preview fee:</strong> ₹29 – ₹69 depending on product price</li>
     </ul>
     <p>All payments are processed by Razorpay, an RBI-authorized payment gateway. Fees are held in escrow and released upon successful preview completion.</p>
-    <p><strong>Revenue split:</strong> 80% of the preview fee goes to the owner; 20% is retained by TryQuick as a platform fee.</p>
+    <p><strong>Revenue split:</strong> 80% of the preview fee goes to the owner; 20% is retained by TryQuick as a platform fee. The Service Provider reserves the right to modify pricing at any time; any changes will be clearly communicated.</p>
     <div class="highlight">Preview fees are payment for the preview service itself — not for any product purchase. TryQuick does not sell goods.</div>
   </div>
 
   <div class="section">
-    <h2>5. Booking and Cancellation</h2>
+    <h2>6. Booking and Cancellation</h2>
     <p>When you request a preview, you submit three preferred time slots. If the owner confirms a slot, a booking is created and payment is required within the deadline shown in the app.</p>
     <p><strong>Cancellation rules:</strong></p>
     <ul>
@@ -86,11 +96,11 @@
   </div>
 
   <div class="section">
-    <h2>6. Owner Obligations</h2>
+    <h2>7. Owner Obligations</h2>
     <ul>
       <li>Listings must accurately represent the product — correct model, photos of the actual item, honest condition rating</li>
       <li>Owners must show up at the confirmed time and location</li>
-      <li>Owners offering digital previews must be KYC-verified (Aadhaar + selfie)</li>
+      <li>Owners may optionally complete identity verification to display a Verified badge on their profile</li>
       <li>Owners with outstanding penalties ≥ ₹30 cannot create new listings until the penalty is cleared</li>
       <li>Maximum 5 active listings per owner account</li>
       <li>Owners must not list stolen, counterfeit, or prohibited goods</li>
@@ -98,7 +108,7 @@
   </div>
 
   <div class="section">
-    <h2>7. Buyer Obligations</h2>
+    <h2>8. Buyer Obligations</h2>
     <ul>
       <li>Buyers must show up at the confirmed time and location</li>
       <li>Buyers must treat owners and their property with respect</li>
@@ -108,13 +118,32 @@
   </div>
 
   <div class="section">
-    <h2>8. KYC and Identity Verification</h2>
-    <p>Owners who wish to offer digital preview sessions must complete identity verification by uploading a valid Aadhaar card photo and a selfie. This is required by Indian payment regulations (RBI) for peer-to-peer financial payouts.</p>
+    <h2>9. Identity Verification (Optional)</h2>
+    <p>Owners may voluntarily complete identity verification by uploading a valid Aadhaar card photo and a selfie. Verified owners receive a Verified badge on their profile, which builds trust with preview seekers. Verification is not required to list products or offer digital previews.</p>
     <p>Submitting false or someone else's identity documents is a violation of these Terms and may result in permanent account suspension and legal action.</p>
   </div>
 
   <div class="section">
-    <h2>9. Prohibited Conduct</h2>
+    <h2>10. Third-Party Services</h2>
+    <p>The Application uses third-party services that have their own Terms and Conditions. Links to their terms are below:</p>
+    <ul>
+      <li><strong>Google Play Services</strong>: <a href="https://policies.google.com/terms" target="_blank" rel="noopener">policies.google.com/terms</a></li>
+      <li><strong>Google Analytics for Firebase</strong>: <a href="https://firebase.google.com/terms/analytics" target="_blank" rel="noopener">firebase.google.com/terms/analytics</a></li>
+      <li><strong>Firebase Crashlytics</strong>: <a href="https://firebase.google.com/terms/crashlytics" target="_blank" rel="noopener">firebase.google.com/terms/crashlytics</a></li>
+      <li><strong>Razorpay</strong>: <a href="https://razorpay.com/terms/" target="_blank" rel="noopener">razorpay.com/terms</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>11. Internet and Device Requirements</h2>
+    <p>Some functions of the Application require an active internet connection (Wi-Fi or mobile data). The Service Provider cannot be held responsible if the Application does not function at full capacity due to lack of internet access or exhausted data allowance.</p>
+    <p>If you use the application outside a Wi-Fi area, your mobile network provider's agreement terms still apply. You may incur data charges, including roaming charges if used outside your home region. By using the application, you accept responsibility for any such charges.</p>
+    <p>It is your responsibility to ensure your device remains charged. If your device runs out of battery and you are unable to access the service, the Service Provider cannot be held responsible.</p>
+    <p>The Service Provider strongly advises against jailbreaking or rooting your phone. Such actions could expose your device to malware, compromise security features, and may result in the Application not functioning correctly or at all.</p>
+  </div>
+
+  <div class="section">
+    <h2>12. Prohibited Conduct</h2>
     <ul>
       <li>Creating fake accounts or impersonating another person</li>
       <li>Listing products you do not own or have no right to display</li>
@@ -128,20 +157,20 @@
   </div>
 
   <div class="section">
-    <h2>10. Disputes</h2>
+    <h2>13. Disputes</h2>
     <p>If a preview goes wrong (owner no-show, product mismatch, etc.), users can raise a dispute within the app. TryQuick's support team reviews disputes within 24 hours. Escrow funds are held until the dispute is resolved.</p>
     <p>TryQuick's dispute decision is final for amounts up to the preview fee. For larger claims, users may seek resolution through appropriate legal channels in Thane, Maharashtra.</p>
   </div>
 
   <div class="section">
-    <h2>11. Wallet and Refunds</h2>
+    <h2>14. Wallet and Refunds</h2>
     <p>TryQuick maintains an in-app wallet for each user. Preview fee refunds are credited to the wallet within 24 hours of a cancellation or dispute resolution.</p>
     <p>Wallet balance withdrawals to bank accounts are available from the Wallet screen. Withdrawals are processed within 3–5 business days.</p>
     <p>Wallet balances do not expire and are not subject to platform fees, except where required by law.</p>
   </div>
 
   <div class="section">
-    <h2>12. TryQuick's Role and Liability Limits</h2>
+    <h2>15. TryQuick's Role and Liability Limits</h2>
     <p>TryQuick is a technology platform that connects buyers and owners. We are not responsible for:</p>
     <ul>
       <li>The accuracy of product listings created by owners</li>
@@ -149,43 +178,45 @@
       <li>Any purchase decision made by a buyer after a preview</li>
       <li>Personal injury or property damage occurring during a preview meeting</li>
       <li>Disputes between users that cannot be resolved through our platform process</li>
+      <li>Any loss, direct or indirect, experienced as a result of relying on third-party information within the Application</li>
     </ul>
     <p>TryQuick's maximum liability to any user in connection with any booking shall not exceed the preview fee paid for that booking.</p>
   </div>
 
   <div class="section">
-    <h2>13. Intellectual Property</h2>
-    <p>The TryQuick name, logo, app design, and all associated content are owned by TryQuick. You may not copy, reproduce, or create derivative works without written permission.</p>
-    <p>By uploading photos or content to TryQuick, you grant us a non-exclusive, royalty-free licence to display that content within the app for the purposes of operating the service.</p>
+    <h2>16. App Updates and Termination</h2>
+    <p>The Service Provider may wish to update the Application at some point. The operating system requirements may change, and you will need to download updates to continue using the Application. The Service Provider does not guarantee that the Application will always be updated to remain relevant or compatible with your specific OS version. You agree to always accept updates when offered.</p>
+    <p>The Service Provider may also cease providing the Application and terminate its use at any time without prior notice. Upon termination, (a) the rights and licenses granted to you will end; (b) you must cease using the Application and, if necessary, delete it from your device.</p>
   </div>
 
   <div class="section">
-    <h2>14. Account Termination</h2>
-    <p>You may delete your account at any time from Settings → Delete Account within the app.</p>
+    <h2>17. Account Termination</h2>
+    <p>You may delete your account at any time from <strong>Settings → Account Actions → Delete Account</strong> within the app. When an account is deleted, active bookings are automatically cancelled and any escrowed funds are returned to the buyer's wallet.</p>
     <p>TryQuick may suspend or terminate your account if you violate these Terms, engage in fraudulent activity, or pose a risk to other users or the platform. In cases of fraud, no refund of wallet balance will be issued.</p>
   </div>
 
   <div class="section">
-    <h2>15. Governing Law</h2>
+    <h2>18. Governing Law</h2>
     <p>These Terms are governed by the laws of India. Any disputes arising from use of TryQuick shall be subject to the exclusive jurisdiction of the courts in Thane, Maharashtra, India.</p>
   </div>
 
   <div class="section">
-    <h2>16. Changes to These Terms</h2>
-    <p>We may update these Terms as TryQuick evolves. We will notify you of material changes via in-app notification. Continued use after changes constitutes acceptance. The "Last Updated" date at the top reflects the current version.</p>
+    <h2>19. Changes to These Terms</h2>
+    <p>The Service Provider may periodically update these Terms and Conditions. You are advised to review this page regularly for any changes. The Service Provider will notify you of material changes via in-app notification. Continued use after changes constitutes acceptance.</p>
+    <p>These Terms and Conditions are effective as of 2026-04-13.</p>
   </div>
 
   <div class="section">
     <div class="contact-box">
       <p style="font-size:15px; font-weight:700; margin-bottom:8px;">Questions About These Terms?</p>
-      <p style="font-size:14px; opacity:0.9;">Email us at <a href="mailto:support@tryquick.in">support@tryquick.in</a></p>
-      <p style="font-size:13px; opacity:0.75; margin-top:4px;">We respond within 48 business hours.</p>
+      <p style="font-size:14px; opacity:0.85; margin-bottom:4px;">Email us at <a href="mailto:support@tryquick.in">support@tryquick.in</a></p>
+      <p style="font-size:13px; opacity:0.5; margin-top:4px;">We respond within 48 business hours.</p>
     </div>
   </div>
 
 </div>
 
-<footer>© 2026 TryQuick · <a href="/privacy.html">Privacy Policy</a> · <a href="/refund.html">Refund Policy</a> · <a href="/safety.html">Safety</a></footer>
+<footer>© 2026 TryQuick · <a href="privacy.html">Privacy Policy</a> · <a href="refund.html">Refund Policy</a> · <a href="safety.html">Safety</a></footer>
 
 </body>
 </html>
