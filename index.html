@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TryQuick – Preview Before You Buy</title>
+  <meta name="description" content="Pay a small fee to see any product in person or on video before you buy it. Never feel buyer's guilt again.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --hero-bg:     #132218;
+      --hero-mid:    #1e3a2a;
+      --accent:      #4ade80;
+      --body-bg:     #f8f7f3;
+      --card-bg:     rgba(255,255,255,0.88);
+      --card-border: rgba(255,255,255,0.55);
+      --text-main:   #111;
+      --text-muted:  #666;
+      --divider:     #edecea;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: var(--body-bg);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    /* HERO */
+    .hero {
+      background: var(--hero-bg);
+      background-image: radial-gradient(ellipse 80% 55% at 50% -5%, var(--hero-mid), transparent 70%);
+      color: #fff;
+      padding: 56px 24px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .logo {
+      font-size: 36px; font-weight: 900; letter-spacing: -1.5px;
+      color: #fff; margin-bottom: 10px; position: relative;
+    }
+    .logo-dot { color: var(--accent); }
+    .hero-tagline {
+      font-size: 30px; font-weight: 800; letter-spacing: -0.8px;
+      line-height: 1.2; margin-bottom: 14px; color: #fff; position: relative;
+    }
+    .hero-pain {
+      display: inline-block;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px; padding: 9px 16px;
+      font-size: 13px; color: rgba(255,255,255,0.55);
+      margin: 0 auto 22px; max-width: 440px; position: relative;
+    }
+    .hero-sub {
+      font-size: 15px; color: rgba(255,255,255,0.52);
+      max-width: 440px; margin: 0 auto 12px;
+      line-height: 1.6; position: relative;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(74,222,128,0.12);
+      border: 1px solid rgba(74,222,128,0.28);
+      border-radius: 20px; padding: 5px 14px;
+      font-size: 12px; font-weight: 600; color: var(--accent);
+      margin-bottom: 24px; letter-spacing: 0.3px; position: relative;
+    }
+    .cta-row {
+      display: flex; gap: 12px; justify-content: center;
+      flex-wrap: wrap; margin-bottom: 32px; position: relative;
+    }
+
+    /* BUTTONS */
+    .btn-primary, .btn-secondary {
+      display: inline-block; font-weight: 700;
+      padding: 15px 32px; border-radius: 40px;
+      text-decoration: none; font-size: 15px;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: var(--accent); color: #0d1f14;
+      box-shadow: 0 2px 14px rgba(74,222,128,0.25);
+    }
+    .btn-primary:hover  { transform: scale(1.04); box-shadow: 0 4px 24px rgba(74,222,128,0.38); }
+    .btn-primary:active { transform: scale(1.07); box-shadow: 0 0 0 6px rgba(74,222,128,0.18); }
+    .btn-secondary {
+      background: transparent; color: rgba(255,255,255,0.75);
+      border: 1px solid rgba(255,255,255,0.22);
+    }
+    .btn-secondary:hover  { transform: scale(1.04); background: rgba(255,255,255,0.06); }
+    .btn-secondary:active { transform: scale(1.07); box-shadow: 0 0 0 5px rgba(255,255,255,0.08); }
+
+    /* PREVIEW TYPE CHIPS — glassmorphism here, on dark hero bg */
+    .preview-types {
+      display: flex; gap: 10px; justify-content: center;
+      flex-wrap: wrap; position: relative;
+    }
+    .ptype {
+      display: flex; align-items: center; gap: 10px;
+      background: rgba(255,255,255,0.07);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.13);
+      border-radius: 14px; padding: 12px 20px;
+      text-align: left; min-width: 180px;
+    }
+    .ptype-icon { font-size: 22px; flex-shrink: 0; }
+    .ptype-label { font-size: 13px; font-weight: 700; color: #fff; }
+    .ptype-sub { font-size: 11px; color: rgba(255,255,255,0.4); margin-top: 2px; }
+
+    /* CONTAINER */
+    .container { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
+
+    /* SECTIONS — very light glass on warm body bg */
+    .section {
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid var(--card-border);
+      border-radius: 18px; padding: 28px; margin-bottom: 20px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 6px 20px rgba(0,0,0,0.04);
+    }
+    .section h2 {
+      font-size: 17px; font-weight: 800; color: var(--text-main);
+      margin-bottom: 18px; letter-spacing: -0.3px;
+      padding-left: 12px; border-left: 3px solid var(--hero-bg);
+    }
+
+    /* STEPS */
+    .step {
+      display: flex; gap: 16px; padding: 12px 0;
+      border-bottom: 1px solid var(--divider); align-items: flex-start;
+    }
+    .step:last-child { border-bottom: none; padding-bottom: 0; }
+    .step-num {
+      width: 32px; height: 32px; background: var(--hero-bg); color: #fff;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 13px; flex-shrink: 0;
+    }
+    .step-text strong { display: block; font-size: 14px; color: var(--text-main); margin-bottom: 2px; }
+    .step-text span { font-size: 13px; color: var(--text-muted); }
+
+    /* PREVIEW SPLIT */
+    .preview-split { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 4px; }
+    .pcard {
+      background: rgba(19,34,24,0.04); border-radius: 14px;
+      padding: 18px 16px; border: 1px solid rgba(19,34,24,0.07);
+    }
+    .pcard-icon { font-size: 26px; margin-bottom: 8px; }
+    .pcard h3 { font-size: 14px; font-weight: 800; color: var(--text-main); margin-bottom: 6px; }
+    .pcard p { font-size: 12px; color: var(--text-muted); line-height: 1.55; }
+
+    /* CATEGORIES */
+    .category-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 4px; }
+    .cat {
+      background: rgba(19,34,24,0.05); border: 1px solid rgba(19,34,24,0.07);
+      border-radius: 10px; padding: 12px 8px; text-align: center;
+      font-size: 12px; font-weight: 600; color: #333;
+      transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+      cursor: default;
+    }
+    .cat:hover  { transform: scale(1.03); background: rgba(19,34,24,0.09); box-shadow: 0 2px 10px rgba(0,0,0,0.07); }
+    .cat:active { transform: scale(1.06); box-shadow: 0 0 0 4px rgba(19,34,24,0.08); }
+
+    /* FEE ROWS */
+    .fee-row {
+      display: flex; justify-content: space-between; padding: 10px 0;
+      border-bottom: 1px solid var(--divider); font-size: 14px; flex-wrap: wrap; gap: 4px;
+    }
+    .fee-row:last-child { border-bottom: none; }
+    .fee-row span { color: #555; }
+    .fee-row strong { color: #16a34a; }
+
+    /* EARN BANNER */
+    .earn-highlight {
+      background: rgba(22,163,74,0.07); border: 1px solid rgba(22,163,74,0.18);
+      border-radius: 14px; padding: 18px 20px; margin-bottom: 16px;
+      display: flex; align-items: center; gap: 14px;
+    }
+    .earn-icon { font-size: 32px; flex-shrink: 0; }
+    .earn-highlight h3 { font-size: 15px; font-weight: 800; color: #14532d; margin-bottom: 3px; }
+    .earn-highlight p { font-size: 13px; color: #166534; }
+
+    /* POLICY LINKS */
+    .links { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .link-card {
+      background: rgba(19,34,24,0.03); border: 1px solid rgba(19,34,24,0.08);
+      border-radius: 12px; padding: 16px; text-decoration: none; color: var(--text-main);
+      display: block; transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+    }
+    .link-card:hover  { transform: scale(1.02); background: rgba(19,34,24,0.06); box-shadow: 0 4px 14px rgba(0,0,0,0.07); }
+    .link-card:active { transform: scale(1.04); box-shadow: 0 0 0 4px rgba(19,34,24,0.08); }
+    .link-card .link-title { font-size: 13px; font-weight: 700; color: var(--text-main); margin-bottom: 4px; }
+    .link-card .link-desc { font-size: 12px; color: #888; }
+
+    /* CONTACT */
+    .contact { background: var(--hero-bg); border-radius: 16px; padding: 24px; color: #fff; text-align: center; }
+    .contact a { color: var(--accent); font-weight: 700; }
+
+    /* FOOTER */
+    footer { text-align: center; padding: 24px; font-size: 12px; color: #aaa; }
+    footer a { color: #888; margin: 0 8px; text-decoration: none; }
+    footer a:hover { color: var(--text-main); }
+
+    @media (max-width: 480px) {
+      .hero-tagline { font-size: 24px; }
+      .preview-types { flex-direction: column; align-items: center; }
+      .preview-split { grid-template-columns: 1fr; }
+      .category-grid { grid-template-columns: repeat(2, 1fr); }
+      .links { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="logo">TryQuick<span class="logo-dot">.</span></div>
+  <div class="hero-tagline">See It First. Buy Without Regret.</div>
+  <div class="hero-pain">Ordered something online, got the wrong thing, return window closed? That ends here.</div>
+  <p class="hero-sub">Pay a small fee to inspect any product in person or on a video call — before you spend your money on it.</p>
+  <div class="badge">🇮🇳 Available Across India</div>
+  <div class="cta-row">
+    <a href="#how-it-works" class="btn-primary">How It Works</a>
+    <a href="mailto:support@tryquick.in" class="btn-secondary">Contact Us</a>
+  </div>
+  <div class="preview-types">
+    <div class="ptype">
+      <span class="ptype-icon">🤝</span>
+      <div>
+        <div class="ptype-label">Physical Preview</div>
+        <div class="ptype-sub">Meet nearby · inspect in hand</div>
+      </div>
+    </div>
+    <div class="ptype">
+      <span class="ptype-icon">📹</span>
+      <div>
+        <div class="ptype-label">Digital Preview</div>
+        <div class="ptype-sub">Video call · anywhere in India</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div style="background: rgba(19,34,24,0.05); border: 1px solid rgba(19,34,24,0.1); border-radius: 12px; padding: 13px 18px; margin-bottom: 20px; font-size: 13px; color: #333; line-height: 1.6;">
+    <strong style="color:#132218;">📖 Quick note on terms</strong> &nbsp;·&nbsp; On TryQuick, <strong>buyer</strong> means someone who wants a product preview — not someone purchasing anything. <strong>Owner</strong> means someone who owns the product and hosts the preview — not a seller. No product is bought or sold here.
+  </div>
+
+  <div class="section" id="how-it-works">
+    <h2>How It Works</h2>
+    <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Browse Listings</strong><span>Find nearby owners for a physical visit, or browse anyone across India for a video call preview.</span></div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Pay a Small Preview Fee</strong><span>Physical preview fees from ₹68, digital from ₹29 — a small price to avoid a purchase you'll regret.</span></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Inspect the Real Product</strong><span>The owner shows you the actual item — in person, or on WhatsApp, FaceTime, Google Meet, or whatever platform you both prefer.</span></div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-text"><strong>Decide With Full Confidence</strong><span>You've seen it. You know exactly what you're getting — or not getting. Zero regret either way.</span></div></div>
+  </div>
+
+  <div class="section">
+    <h2>Physical or Digital — You Choose</h2>
+    <div class="preview-split">
+      <div class="pcard">
+        <div class="pcard-icon">🤝</div>
+        <h3>Physical Preview</h3>
+        <p>Meet the owner at a nearby spot. Hold the product, test it, inspect every angle in person. Best for electronics, furniture, and high-value items.</p>
+      </div>
+      <div class="pcard">
+        <div class="pcard-icon">📹</div>
+        <h3>Digital Preview</h3>
+        <p>Video call with the owner from anywhere in India — on WhatsApp, FaceTime, Google Meet, or any platform you prefer. Great for clothes, accessories, and smaller items.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>What Can You Preview?</h2>
+    <div class="category-grid">
+      <div class="cat">📱 Smartphones</div>
+      <div class="cat">💻 Laptops</div>
+      <div class="cat">📷 Cameras</div>
+      <div class="cat">🎧 Earbuds &amp; Audio</div>
+      <div class="cat">👗 Dresses &amp; Tops</div>
+      <div class="cat">👟 Shoes &amp; Footwear</div>
+      <div class="cat">⌚ Watches</div>
+      <div class="cat">👜 Bags &amp; Accessories</div>
+      <div class="cat">🚲 Cycles &amp; Gear</div>
+      <div class="cat">🎮 Gaming</div>
+      <div class="cat">🍳 Kitchen Appliances</div>
+      <div class="cat">🧸 Toys &amp; Kids</div>
+      <div class="cat">🏋️ Sports &amp; Fitness</div>
+      <div class="cat">🛋️ Home &amp; Décor</div>
+      <div class="cat">📚 Books &amp; More</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Preview Fee Examples</h2>
+    <div class="fee-row"><span>₹1,000–₹2,000 product (dress, shoes, earbuds)</span><strong>₹68–₹75</strong></div>
+    <div class="fee-row"><span>₹10,000 product (smartphone)</span><strong>₹108</strong></div>
+    <div class="fee-row"><span>₹30,000 product (laptop)</span><strong>₹150</strong></div>
+    <div class="fee-row"><span>₹60,000 product (DSLR camera)</span><strong>₹192</strong></div>
+    <div class="fee-row"><span>Digital preview (video call, all India)</span><strong>₹29–₹69</strong></div>
+  </div>
+
+  <div class="section">
+    <h2>Own a Product? Earn From It.</h2>
+    <div class="earn-highlight">
+      <div class="earn-icon">💸</div>
+      <div>
+        <h3>Your Product. Your Income.</h3>
+        <p>List something you own and earn 80% of every preview fee — without giving it away. Your product stays with you.</p>
+      </div>
+    </div>
+    <div class="step"><div class="step-num">1</div><div class="step-text"><strong>List Your Product</strong><span>Add photos, describe the condition, paste a product link. Preview fee is calculated automatically.</span></div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Accept a Preview Request</strong><span>Pick a time slot. Offer a physical meetup or a video call — WhatsApp, Meet, FaceTime, your choice.</span></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Get Paid</strong><span>80% of the preview fee lands in your TryQuick wallet once the preview is done. Withdraw anytime.</span></div></div>
+  </div>
+
+  <div class="section">
+    <h2>Policies &amp; Legal</h2>
+    <div class="links">
+      <a href="privacy.html" class="link-card"><div class="link-title">Privacy Policy</div><div class="link-desc">How we collect and use your data</div></a>
+      <a href="terms.html" class="link-card"><div class="link-title">Terms of Service</div><div class="link-desc">Rules governing use of TryQuick</div></a>
+      <a href="refund.html" class="link-card"><div class="link-title">Refund Policy</div><div class="link-desc">Cancellations, refunds, and penalties</div></a>
+      <a href="safety.html" class="link-card"><div class="link-title">Safety Guidelines</div><div class="link-desc">How to stay safe during previews</div></a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="contact">
+      <p style="font-size:16px; font-weight:700; margin-bottom:8px;">Get in Touch</p>
+      <p style="font-size:14px; opacity:0.8; margin-bottom:4px;"><a href="mailto:support@tryquick.in">support@tryquick.in</a></p>
+      <p style="font-size:13px; opacity:0.45;">India · We respond within 48 hours</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 TryQuick
+  <a href="privacy.html">Privacy</a>
+  <a href="terms.html">Terms</a>
+  <a href="refund.html">Refunds</a>
+  <a href="safety.html">Safety</a>
+</footer>
+
+</body>
+</html>
