@@ -54,59 +54,92 @@
   </div>
 
   <div class="section">
-    <h2>Cancellation Rules &amp; Refund Amounts</h2>
+    <h2>Buyer Cancellation Rules</h2>
     <table>
       <tr>
-        <th>When Cancellation Happens</th>
-        <th>Who Cancels</th>
+        <th>When Buyer Cancels</th>
         <th>Buyer Refund</th>
         <th>Owner Impact</th>
       </tr>
       <tr>
-        <td>Before payment is confirmed</td>
-        <td>Buyer</td>
-        <td class="green">100% — full refund</td>
-        <td>No penalty</td>
+        <td>Before owner picks a time slot (pending / slots submitted)</td>
+        <td class="green">Nothing charged — no payment taken yet</td>
+        <td>No impact</td>
       </tr>
       <tr>
-        <td>After slot is scheduled, before journey starts</td>
-        <td>Buyer</td>
-        <td class="orange">Fee minus ₹10 cancellation charge (non-refundable)</td>
-        <td>No impact on owner</td>
+        <td>After slot confirmed by owner, before buyer pays</td>
+        <td class="green">Nothing charged — no payment taken yet</td>
+        <td>No impact</td>
       </tr>
       <tr>
-        <td>After journey starts (active preview)</td>
-        <td>Buyer</td>
-        <td class="red">80% refunded (20% non-refundable — preview already started)</td>
+        <td>After payment, before journey starts (scheduled status)</td>
+        <td class="orange">Preview fee minus ₹10 flat cancellation charge</td>
+        <td>No penalty on owner</td>
+      </tr>
+      <tr>
+        <td>After physical preview journey starts (active / escrow locked)</td>
+        <td class="red">80% refunded — 20% of fee is non-refundable (preview already started)</td>
         <td>No earnings — booking cancelled</td>
       </tr>
       <tr>
-        <td>Owner does not show up</td>
-        <td>Owner (no-show)</td>
-        <td class="green">100% — full refund</td>
-        <td>₹10 penalty deducted from next payout</td>
+        <td>After digital preview session starts (active / escrow locked)</td>
+        <td class="orange">Preview fee minus ₹10 flat fee (contact details were shared)</td>
+        <td>No earnings — booking cancelled</td>
       </tr>
       <tr>
-        <td>Owner cancels after confirmation</td>
-        <td>Owner</td>
-        <td class="green">100% — full refund</td>
-        <td>₹10 penalty deducted from next payout</td>
+        <td>Booking expires (2-hour payment deadline missed)</td>
+        <td class="green">Nothing charged — no payment was taken</td>
+        <td>No penalty</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Owner Cancellation Rules</h2>
+    <table>
+      <tr>
+        <th>When Owner Cancels</th>
+        <th>Buyer Refund</th>
+        <th>Owner Penalty</th>
       </tr>
       <tr>
-        <td>Booking expires (payment deadline missed)</td>
-        <td>System</td>
-        <td class="green">100% — full refund</td>
+        <td>Owner declines request before picking a slot</td>
+        <td class="green">Nothing charged to buyer</td>
         <td>No penalty</td>
       </tr>
       <tr>
+        <td>Owner cancels after confirming a slot (before journey starts)</td>
+        <td class="green">100% refund to buyer wallet</td>
+        <td class="orange">₹10 penalty added to owner's dues — deducted from next payout</td>
+      </tr>
+      <tr>
+        <td>Owner cancels or no-shows during physical preview</td>
+        <td class="green">100% refund to buyer wallet</td>
+        <td class="red">15% of preview fee, capped at ₹30 — deducted from future earnings</td>
+      </tr>
+      <tr>
+        <td>Owner cancels during digital preview session</td>
+        <td class="green">100% refund to buyer wallet</td>
+        <td class="orange">₹10 flat penalty — deducted from future earnings</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Dispute Outcomes</h2>
+    <table>
+      <tr>
+        <th>Outcome</th>
+        <th>Buyer Refund</th>
+        <th>Owner Impact</th>
+      </tr>
+      <tr>
         <td>Dispute resolved in buyer's favour</td>
-        <td>TryQuick team</td>
         <td class="green">Up to 100% at TryQuick's discretion</td>
         <td>Penalty may apply</td>
       </tr>
       <tr>
         <td>Dispute resolved in owner's favour</td>
-        <td>TryQuick team</td>
         <td>Partial or no refund, at TryQuick's discretion</td>
         <td>Owner receives payout</td>
       </tr>
@@ -125,8 +158,9 @@
 
   <div class="section">
     <h2>Repeated Cancellations</h2>
-    <p>Cancelling 2 or more bookings in a single day will trigger a temporary booking freeze on your account. This is to protect owners' time and ensure platform reliability.</p>
-    <p>Owners with unpaid penalties of ₹30 or more cannot create new listings until the penalty is cleared from their wallet.</p>
+    <p><strong>For Owners:</strong> Cancelling 2 or more bookings in a single day will trigger a 1-day account suspension. During suspension, the owner cannot accept new requests or create listings.</p>
+    <p><strong>For Owners:</strong> Owners with unpaid penalties of ₹30 or more cannot create new listings until the penalty balance is cleared from their earnings.</p>
+    <p><strong>For Buyers:</strong> Frequent cancellations are monitored and may result in temporary account restrictions to protect owners' time.</p>
   </div>
 
   <div class="section">
