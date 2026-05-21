@@ -5,19 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TryQuick – Preview Before You Buy</title>
   <meta name="description" content="Pay a small fee to see any product in person or on video before you buy it. Never feel buyer's guilt again.">
+  <meta name="keywords" content="preview before you buy, product inspection, buy without regret, peer to peer preview, India marketplace">
+  <link rel="canonical" href="https://tryquick.in/">
+  <meta property="og:title" content="TryQuick – Preview Before You Buy">
+  <meta property="og:description" content="Pay a small fee to inspect any product in person or on a video call — before you spend your money on it. Available Across India.">
+  <meta property="og:url" content="https://tryquick.in/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TryQuick – Preview Before You Buy">
+  <meta name="twitter:description" content="Pay a small fee to inspect any product in person or on a video call — before you spend your money on it.">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"TryQuick","url":"https://tryquick.in","description":"Peer-to-peer product preview marketplace founded and operated by Charan Saiyesh Reddy Medapati. Buyers pay a small fee to physically examine or video-call preview a product before purchasing.","founder":{"@type":"Person","name":"Charan Saiyesh Reddy Medapati"},"areaServed":"IN","contactPoint":{"@type":"ContactPoint","email":"support@tryquick.in","contactType":"customer support"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"TryQuick","url":"https://tryquick.in","potentialAction":{"@type":"SearchAction","target":"https://tryquick.in/?q={search_term_string}","query-input":"required name=search_term_string"}}
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
       --hero-bg:     #132218;
       --hero-mid:    #1e3a2a;
-      --accent:      #4ade80;
-      --body-bg:     #f8f7f3;
-      --card-bg:     rgba(255,255,255,0.88);
-      --card-border: rgba(255,255,255,0.55);
+      --accent:      #5B9DC9;
+      --accent-dark: #3a7fa8;
+      --body-bg:     #fdfaed;
+      --card-bg:     rgba(255,255,255,0.92);
+      --card-border: rgba(255,255,255,0.6);
       --text-main:   #111;
       --text-muted:  #666;
-      --divider:     #edecea;
+      --divider:     #ede9d8;
+      --blue-tint:   rgba(91,157,201,0.08);
+      --blue-border: rgba(91,157,201,0.2);
     }
 
     body {
@@ -61,10 +79,10 @@
     }
     .badge {
       display: inline-block;
-      background: rgba(74,222,128,0.12);
-      border: 1px solid rgba(74,222,128,0.28);
+      background: rgba(91,157,201,0.15);
+      border: 1px solid rgba(91,157,201,0.32);
       border-radius: 20px; padding: 5px 14px;
-      font-size: 12px; font-weight: 600; color: var(--accent);
+      font-size: 12px; font-weight: 600; color: #a8d4f0;
       margin-bottom: 24px; letter-spacing: 0.3px; position: relative;
     }
     .cta-row {
@@ -74,26 +92,27 @@
 
     /* BUTTONS */
     .btn-primary, .btn-secondary {
-      display: inline-block; font-weight: 700;
-      padding: 15px 32px; border-radius: 40px;
+      display: inline-flex; align-items: center; gap: 8px;
+      font-weight: 700; padding: 15px 32px; border-radius: 40px;
       text-decoration: none; font-size: 15px;
       transition: transform 0.12s ease, box-shadow 0.12s ease;
       cursor: pointer;
     }
     .btn-primary {
-      background: var(--accent); color: #0d1f14;
-      box-shadow: 0 2px 14px rgba(74,222,128,0.25);
+      background: var(--accent); color: #fff;
+      box-shadow: 0 4px 18px rgba(91,157,201,0.45), 0 1px 4px rgba(0,0,0,0.15);
     }
-    .btn-primary:hover  { transform: scale(1.04); box-shadow: 0 4px 24px rgba(74,222,128,0.38); }
-    .btn-primary:active { transform: scale(1.07); box-shadow: 0 0 0 6px rgba(74,222,128,0.18); }
+    .btn-primary:hover  { transform: scale(1.04); box-shadow: 0 6px 28px rgba(91,157,201,0.55); }
+    .btn-primary:active { transform: scale(1.07); }
     .btn-secondary {
-      background: transparent; color: rgba(255,255,255,0.75);
-      border: 1px solid rgba(255,255,255,0.22);
+      background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.85);
+      border: 1.5px solid rgba(255,255,255,0.3);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
     }
-    .btn-secondary:hover  { transform: scale(1.04); background: rgba(255,255,255,0.06); }
-    .btn-secondary:active { transform: scale(1.07); box-shadow: 0 0 0 5px rgba(255,255,255,0.08); }
+    .btn-secondary:hover  { transform: scale(1.04); background: rgba(255,255,255,0.15); }
+    .btn-secondary:active { transform: scale(1.07); }
 
-    /* PREVIEW TYPE CHIPS — glassmorphism here, on dark hero bg */
+    /* PREVIEW TYPE CHIPS */
     .preview-types {
       display: flex; gap: 10px; justify-content: center;
       flex-wrap: wrap; position: relative;
@@ -114,19 +133,19 @@
     /* CONTAINER */
     .container { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
 
-    /* SECTIONS — very light glass on warm body bg */
+    /* SECTIONS */
     .section {
       background: var(--card-bg);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
       border: 1px solid var(--card-border);
       border-radius: 18px; padding: 28px; margin-bottom: 20px;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 6px 20px rgba(0,0,0,0.04);
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 6px 20px rgba(0,0,0,0.05);
     }
     .section h2 {
       font-size: 17px; font-weight: 800; color: var(--text-main);
       margin-bottom: 18px; letter-spacing: -0.3px;
-      padding-left: 12px; border-left: 3px solid var(--hero-bg);
+      padding-left: 12px; border-left: 3px solid var(--accent);
     }
 
     /* STEPS */
@@ -146,8 +165,8 @@
     /* PREVIEW SPLIT */
     .preview-split { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 4px; }
     .pcard {
-      background: rgba(19,34,24,0.04); border-radius: 14px;
-      padding: 18px 16px; border: 1px solid rgba(19,34,24,0.07);
+      background: var(--blue-tint); border-radius: 14px;
+      padding: 18px 16px; border: 1px solid var(--blue-border);
     }
     .pcard-icon { font-size: 26px; margin-bottom: 8px; }
     .pcard h3 { font-size: 14px; font-weight: 800; color: var(--text-main); margin-bottom: 6px; }
@@ -156,14 +175,13 @@
     /* CATEGORIES */
     .category-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 4px; }
     .cat {
-      background: rgba(19,34,24,0.05); border: 1px solid rgba(19,34,24,0.07);
+      background: var(--blue-tint); border: 1px solid var(--blue-border);
       border-radius: 10px; padding: 12px 8px; text-align: center;
       font-size: 12px; font-weight: 600; color: #333;
       transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
       cursor: default;
     }
-    .cat:hover  { transform: scale(1.03); background: rgba(19,34,24,0.09); box-shadow: 0 2px 10px rgba(0,0,0,0.07); }
-    .cat:active { transform: scale(1.06); box-shadow: 0 0 0 4px rgba(19,34,24,0.08); }
+    .cat:hover { transform: scale(1.03); background: rgba(91,157,201,0.14); box-shadow: 0 2px 10px rgba(91,157,201,0.15); }
 
     /* FEE ROWS */
     .fee-row {
@@ -172,44 +190,74 @@
     }
     .fee-row:last-child { border-bottom: none; }
     .fee-row span { color: #555; }
-    .fee-row strong { color: #16a34a; }
+    .fee-row strong { color: var(--accent-dark); }
+
+    /* TRUST SECTION */
+    .trust-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 4px; }
+    .trust-card {
+      background: var(--blue-tint); border: 1px solid var(--blue-border);
+      border-radius: 14px; padding: 16px;
+    }
+    .trust-card .trust-icon { font-size: 24px; margin-bottom: 8px; }
+    .trust-card h3 { font-size: 13px; font-weight: 800; color: var(--text-main); margin-bottom: 4px; }
+    .trust-card p { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
 
     /* EARN BANNER */
     .earn-highlight {
-      background: rgba(22,163,74,0.07); border: 1px solid rgba(22,163,74,0.18);
+      background: var(--blue-tint); border: 1px solid var(--blue-border);
       border-radius: 14px; padding: 18px 20px; margin-bottom: 16px;
       display: flex; align-items: center; gap: 14px;
     }
     .earn-icon { font-size: 32px; flex-shrink: 0; }
-    .earn-highlight h3 { font-size: 15px; font-weight: 800; color: #14532d; margin-bottom: 3px; }
-    .earn-highlight p { font-size: 13px; color: #166534; }
+    .earn-highlight h3 { font-size: 15px; font-weight: 800; color: var(--accent-dark); margin-bottom: 3px; }
+    .earn-highlight p { font-size: 13px; color: #3a7fa8; }
 
     /* POLICY LINKS */
     .links { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
     .link-card {
-      background: rgba(19,34,24,0.03); border: 1px solid rgba(19,34,24,0.08);
-      border-radius: 12px; padding: 16px; text-decoration: none; color: var(--text-main);
-      display: block; transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+      background: var(--blue-tint);
+      border: 1.5px solid var(--blue-border);
+      border-radius: 14px; padding: 18px 16px; text-decoration: none; color: var(--text-main);
+      display: flex; justify-content: space-between; align-items: center;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+      box-shadow: 0 2px 6px rgba(91,157,201,0.08);
     }
-    .link-card:hover  { transform: scale(1.02); background: rgba(19,34,24,0.06); box-shadow: 0 4px 14px rgba(0,0,0,0.07); }
-    .link-card:active { transform: scale(1.04); box-shadow: 0 0 0 4px rgba(19,34,24,0.08); }
-    .link-card .link-title { font-size: 13px; font-weight: 700; color: var(--text-main); margin-bottom: 4px; }
+    .link-card:hover {
+      transform: translateY(-2px); background: rgba(91,157,201,0.14);
+      box-shadow: 0 6px 18px rgba(91,157,201,0.18);
+      border-color: rgba(91,157,201,0.4);
+    }
+    .link-card:active { transform: scale(1.02); }
+    .link-card .link-title { font-size: 13px; font-weight: 700; color: var(--text-main); margin-bottom: 3px; }
     .link-card .link-desc { font-size: 12px; color: #888; }
+    .link-card .link-arrow { font-size: 18px; color: var(--accent); flex-shrink: 0; margin-left: 8px; opacity: 0.7; }
+
+    /* FOUNDER STRIP */
+    .founder-strip {
+      background: rgba(91,157,201,0.06); border: 1px solid var(--blue-border);
+      border-radius: 14px; padding: 16px 20px; margin-bottom: 20px;
+      display: flex; align-items: center; gap: 14px;
+    }
+    .founder-strip .f-icon { font-size: 28px; flex-shrink: 0; }
+    .founder-strip h3 { font-size: 13px; font-weight: 800; color: var(--text-main); margin-bottom: 2px; }
+    .founder-strip p { font-size: 12px; color: var(--text-muted); }
 
     /* CONTACT */
     .contact { background: var(--hero-bg); border-radius: 16px; padding: 24px; color: #fff; text-align: center; }
     .contact a { color: var(--accent); font-weight: 700; }
 
     /* FOOTER */
-    footer { text-align: center; padding: 24px; font-size: 12px; color: #aaa; }
+    footer { text-align: center; padding: 24px 24px 32px; font-size: 12px; color: #aaa; line-height: 1.8; }
     footer a { color: #888; margin: 0 8px; text-decoration: none; }
     footer a:hover { color: var(--text-main); }
+    .footer-founder { font-size: 11px; color: #bbb; margin-top: 6px; }
 
     @media (max-width: 480px) {
       .hero-tagline { font-size: 24px; }
       .preview-types { flex-direction: column; align-items: center; }
       .preview-split { grid-template-columns: 1fr; }
       .category-grid { grid-template-columns: repeat(2, 1fr); }
+      .trust-grid { grid-template-columns: 1fr; }
       .links { grid-template-columns: 1fr; }
     }
   </style>
@@ -223,8 +271,8 @@
   <p class="hero-sub">Pay a small fee to inspect any product in person or on a video call — before you spend your money on it.</p>
   <div class="badge">🇮🇳 Available Across India</div>
   <div class="cta-row">
-    <a href="#how-it-works" class="btn-primary">How It Works</a>
-    <a href="mailto:support@tryquick.in" class="btn-secondary">Contact Us</a>
+    <a href="#how-it-works" class="btn-primary">How It Works ↓</a>
+    <a href="mailto:support@tryquick.in" class="btn-secondary">Contact Us →</a>
   </div>
   <div class="preview-types">
     <div class="ptype">
@@ -246,7 +294,7 @@
 
 <div class="container">
 
-  <div style="background: rgba(19,34,24,0.05); border: 1px solid rgba(19,34,24,0.1); border-radius: 12px; padding: 13px 18px; margin-bottom: 20px; font-size: 13px; color: #333; line-height: 1.6;">
+  <div style="background: rgba(91,157,201,0.07); border: 1px solid rgba(91,157,201,0.18); border-radius: 12px; padding: 13px 18px; margin-bottom: 20px; font-size: 13px; color: #333; line-height: 1.6;">
     <strong style="color:#132218;">📖 Quick note on terms</strong> &nbsp;·&nbsp; On TryQuick, <strong>buyer</strong> means someone who wants a product preview — not someone purchasing anything. <strong>Owner</strong> means someone who owns the product and hosts the preview — not a seller. No product is bought or sold here.
   </div>
 
@@ -254,7 +302,7 @@
     <h2>How It Works</h2>
     <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Browse Listings</strong><span>Find nearby owners for a physical visit, or browse anyone across India for a video call preview.</span></div></div>
     <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Pay a Small Preview Fee</strong><span>Physical preview fees from ₹68, digital from ₹29 — a small price to avoid a purchase you'll regret.</span></div></div>
-    <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Inspect the Real Product</strong><span>The owner shows you the actual item — in person, or on WhatsApp, FaceTime, Google Meet, or whatever platform you both prefer.</span></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Inspect the Real Product</strong><span>The owner shows you the actual item — in person, or on WhatsApp, FaceTime, Google Meet, or any platform you both prefer.</span></div></div>
     <div class="step"><div class="step-num">4</div><div class="step-text"><strong>Decide With Full Confidence</strong><span>You've seen it. You know exactly what you're getting — or not getting. Zero regret either way.</span></div></div>
   </div>
 
@@ -270,6 +318,32 @@
         <div class="pcard-icon">📹</div>
         <h3>Digital Preview</h3>
         <p>Video call with the owner from anywhere in India — on WhatsApp, FaceTime, Google Meet, or any platform you prefer. Great for clothes, accessories, and smaller items.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Why You Can Trust TryQuick</h2>
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="trust-icon">🔐</div>
+        <h3>OTP-Verified Meetings</h3>
+        <p>Both buyer and owner verify their identity with a one-time code before the preview starts. No anonymous encounters.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">🏦</div>
+        <h3>Escrow Protection</h3>
+        <p>Your preview fee is held safely in escrow and only released after the preview is confirmed complete. You're never left hanging.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">⭐</div>
+        <h3>Mutual Ratings</h3>
+        <p>Both parties rate each other after every preview. Bad actors get flagged fast — keeping the community honest.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">📦</div>
+        <h3>No Goods Change Hands</h3>
+        <p>TryQuick is a preview service only. No product is sold through the platform — the owner keeps their item, always.</p>
       </div>
     </div>
   </div>
@@ -321,14 +395,22 @@
   <div class="section">
     <h2>Policies &amp; Legal</h2>
     <div class="links">
-      <a href="privacy.html" class="link-card"><div class="link-title">Privacy Policy</div><div class="link-desc">How we collect and use your data</div></a>
-      <a href="terms.html" class="link-card"><div class="link-title">Terms of Service</div><div class="link-desc">Rules governing use of TryQuick</div></a>
-      <a href="refund.html" class="link-card"><div class="link-title">Refund Policy</div><div class="link-desc">Cancellations, refunds, and penalties</div></a>
-      <a href="safety.html" class="link-card"><div class="link-title">Safety Guidelines</div><div class="link-desc">How to stay safe during previews</div></a>
+      <a href="privacy.html" class="link-card"><div><div class="link-title">Privacy Policy</div><div class="link-desc">How we collect and use your data</div></div><span class="link-arrow">→</span></a>
+      <a href="terms.html" class="link-card"><div><div class="link-title">Terms of Service</div><div class="link-desc">Rules governing use of TryQuick</div></div><span class="link-arrow">→</span></a>
+      <a href="refund.html" class="link-card"><div><div class="link-title">Refund Policy</div><div class="link-desc">Cancellations, refunds, and penalties</div></div><span class="link-arrow">→</span></a>
+      <a href="safety.html" class="link-card"><div><div class="link-title">Safety Guidelines</div><div class="link-desc">How to stay safe during previews</div></div><span class="link-arrow">→</span></a>
     </div>
   </div>
 
-  <div class="section">
+  <div class="founder-strip">
+    <div class="f-icon">👤</div>
+    <div>
+      <h3>About TryQuick</h3>
+      <p>Founded and operated by <strong>Charan Saiyesh Reddy Medapati</strong> · Thane, Maharashtra, India · <a href="mailto:support@tryquick.in" style="color: var(--accent-dark); font-weight:600;">support@tryquick.in</a></p>
+    </div>
+  </div>
+
+  <div class="section" style="padding: 0; overflow: hidden;">
     <div class="contact">
       <p style="font-size:16px; font-weight:700; margin-bottom:8px;">Get in Touch</p>
       <p style="font-size:14px; opacity:0.8; margin-bottom:4px;"><a href="mailto:support@tryquick.in">support@tryquick.in</a></p>
@@ -344,6 +426,7 @@
   <a href="terms.html">Terms</a>
   <a href="refund.html">Refunds</a>
   <a href="safety.html">Safety</a>
+  <div class="footer-founder">Founded by Charan Saiyesh Reddy Medapati · Thane, India</div>
 </footer>
 
 </body>
