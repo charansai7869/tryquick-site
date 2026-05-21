@@ -24,18 +24,18 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --hero-bg:     #132218;
-      --hero-mid:    #1e3a2a;
-      --accent:      #5B9DC9;
-      --accent-dark: #3a7fa8;
-      --body-bg:     #fdfaed;
+      --hero-bg:     #fb8d1f ;
+      --hero-mid:    #ffc184;
+      --accent:      #39f64f;
+      --accent-dark: #248ebc;
+      --body-bg:     #fffadb;
       --card-bg:     rgba(255,255,255,0.92);
       --card-border: rgba(255,255,255,0.6);
       --text-main:   #111;
       --text-muted:  #666;
-      --divider:     #ede9d8;
-      --blue-tint:   rgba(91,157,201,0.08);
-      --blue-border: rgba(91,157,201,0.2);
+      --divider:     #fff2df;
+      --blue-tint:   rgba(191,221,240,0.35);
+      --blue-border: rgba(140,192,235,0.45);
     }
 
     body {
@@ -48,7 +48,7 @@
     /* HERO */
     .hero {
       background: var(--hero-bg);
-      background-image: radial-gradient(ellipse 80% 55% at 50% -5%, var(--hero-mid), transparent 70%);
+      background-image: radial-gradient(ellipse 80% 55% at 50% 110%, var(--hero-mid), transparent 70%);
       color: #fff;
       padding: 56px 24px 48px;
       text-align: center;
@@ -59,7 +59,7 @@
       font-size: 36px; font-weight: 900; letter-spacing: -1.5px;
       color: #fff; margin-bottom: 10px; position: relative;
     }
-    .logo-dot { color: var(--accent); }
+    .logo-dot { color: #4ade80; }
     .hero-tagline {
       font-size: 30px; font-weight: 800; letter-spacing: -0.8px;
       line-height: 1.2; margin-bottom: 14px; color: #fff; position: relative;
@@ -67,9 +67,9 @@
     .hero-pain {
       display: inline-block;
       background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
+      border: 1.5px solid rgba(255,255,255,0.32);
       border-radius: 8px; padding: 9px 16px;
-      font-size: 13px; color: rgba(255,255,255,0.55);
+      font-size: 13px; color: rgba(255,255,255,0.82);
       margin: 0 auto 22px; max-width: 440px; position: relative;
     }
     .hero-sub {
@@ -79,10 +79,10 @@
     }
     .badge {
       display: inline-block;
-      background: rgba(91,157,201,0.15);
-      border: 1px solid rgba(91,157,201,0.32);
+      background: rgba(255,255,255,0.1);
+      border: 1.5px solid rgba(255,255,255,0.3);
       border-radius: 20px; padding: 5px 14px;
-      font-size: 12px; font-weight: 600; color: #a8d4f0;
+      font-size: 12px; font-weight: 600; color: #fff;
       margin-bottom: 24px; letter-spacing: 0.3px; position: relative;
     }
     .cta-row {
@@ -99,10 +99,10 @@
       cursor: pointer;
     }
     .btn-primary {
-      background: var(--accent); color: #fff;
-      box-shadow: 0 4px 18px rgba(91,157,201,0.45), 0 1px 4px rgba(0,0,0,0.15);
+      background: var(--accent); color: #0d1f14;
+      box-shadow: 0 4px 18px rgba(74,222,128,0.35), 0 1px 4px rgba(0,0,0,0.15);
     }
-    .btn-primary:hover  { transform: scale(1.04); box-shadow: 0 6px 28px rgba(91,157,201,0.55); }
+    .btn-primary:hover  { transform: scale(1.04); box-shadow: 0 6px 28px rgba(74,222,128,0.5); }
     .btn-primary:active { transform: scale(1.07); }
     .btn-secondary {
       background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.85);
@@ -119,10 +119,10 @@
     }
     .ptype {
       display: flex; align-items: center; gap: 10px;
-      background: rgba(255,255,255,0.07);
+      background: rgba(255,255,255,0.1);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,0.13);
+      border: 1.5px solid rgba(255,255,255,0.3);
       border-radius: 14px; padding: 12px 20px;
       text-align: left; min-width: 180px;
     }
@@ -145,7 +145,8 @@
     .section h2 {
       font-size: 17px; font-weight: 800; color: var(--text-main);
       margin-bottom: 18px; letter-spacing: -0.3px;
-      padding-left: 12px; border-left: 3px solid var(--accent);
+      padding: 8px 12px; background: #FFEBCC;
+      border-left: 3px solid #e8923a; border-radius: 0 8px 8px 0;
     }
 
     /* STEPS */
@@ -155,7 +156,7 @@
     }
     .step:last-child { border-bottom: none; padding-bottom: 0; }
     .step-num {
-      width: 32px; height: 32px; background: var(--hero-bg); color: #fff;
+      width: 32px; height: 32px; background: #132218; color: #fff;
       border-radius: 50%; display: flex; align-items: center; justify-content: center;
       font-weight: 800; font-size: 13px; flex-shrink: 0;
     }
@@ -181,7 +182,7 @@
       transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
       cursor: default;
     }
-    .cat:hover { transform: scale(1.03); background: rgba(91,157,201,0.14); box-shadow: 0 2px 10px rgba(91,157,201,0.15); }
+    .cat:hover { transform: scale(1.03); background: rgba(140,192,235,0.5); box-shadow: 0 2px 10px rgba(140,192,235,0.2); }
 
     /* FEE ROWS */
     .fee-row {
@@ -204,7 +205,7 @@
 
     /* EARN BANNER */
     .earn-highlight {
-      background: var(--blue-tint); border: 1px solid var(--blue-border);
+      background: #FFEBCC; border: 1px solid rgba(140,192,235,0.4);
       border-radius: 14px; padding: 18px 20px; margin-bottom: 16px;
       display: flex; align-items: center; gap: 14px;
     }
@@ -243,8 +244,8 @@
     .founder-strip p { font-size: 12px; color: var(--text-muted); }
 
     /* CONTACT */
-    .contact { background: var(--hero-bg); border-radius: 16px; padding: 24px; color: #fff; text-align: center; }
-    .contact a { color: var(--accent); font-weight: 700; }
+    .contact { background: #f9faf9; border-radius: 16px; padding: 24px; color: #111; text-align: center; }
+    .contact a { color: #b45309; font-weight: 700; }
 
     /* FOOTER */
     footer { text-align: center; padding: 24px 24px 32px; font-size: 12px; color: #aaa; line-height: 1.8; }
@@ -412,9 +413,9 @@
 
   <div class="section" style="padding: 0; overflow: hidden;">
     <div class="contact">
-      <p style="font-size:16px; font-weight:700; margin-bottom:8px;">Get in Touch</p>
-      <p style="font-size:14px; opacity:0.8; margin-bottom:4px;"><a href="mailto:support@tryquick.in">support@tryquick.in</a></p>
-      <p style="font-size:13px; opacity:0.45;">India · We respond within 48 hours</p>
+      <p style="font-size:16px; font-weight:700; margin-bottom:8px; color:#111;">Get in Touch</p>
+      <p style="font-size:14px; margin-bottom:4px;"><a href="mailto:support@tryquick.in">support@tryquick.in</a></p>
+      <p style="font-size:13px; color:#888;">India · We respond within 48 hours</p>
     </div>
   </div>
 
@@ -429,5 +430,27 @@
   <div class="footer-founder">Founded by Charan Saiyesh Reddy Medapati · Thane, India</div>
 </footer>
 
+<script>
+  (function () {
+    var cards = document.querySelectorAll(".section, .founder-strip");
+    cards.forEach(function (c) {
+      c.style.transition = "transform 0.22s ease, opacity 0.22s ease";
+      c.style.willChange = "transform, opacity";
+    });
+    function update() {
+      var cy = window.innerHeight / 2;
+      cards.forEach(function (card) {
+        var r = card.getBoundingClientRect();
+        var cardCenter = r.top + r.height / 2;
+        var dist = Math.abs(cy - cardCenter);
+        var t = Math.min(1, dist / (window.innerHeight * 0.65));
+        card.style.transform = "scale(" + (1 - t * 0.23).toFixed(3) + ")";
+        card.style.opacity = Math.max(0.55, 1 - t * 0.55).toFixed(3);
+      });
+    }
+    window.addEventListener("scroll", update, { passive: true });
+    update();
+  })();
+</script>
 </body>
 </html>
