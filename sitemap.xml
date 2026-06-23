@@ -4,5 +4,6 @@
   <url><loc>https://tryquick.in/privacy.html</loc><priority>0.5</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://tryquick.in/terms.html</loc><priority>0.5</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://tryquick.in/refund.html</loc><priority>0.5</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://tryquick.in/shipping.html</loc><priority>0.5</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://tryquick.in/safety.html</loc><priority>0.5</priority><changefreq>yearly</changefreq></url>
 </urlset>
