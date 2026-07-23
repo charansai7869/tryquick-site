@@ -1,0 +1,36 @@
+# TryQuick
+
+> TryQuick is an Indian peer-to-peer product preview marketplace. Before buying a product, a buyer pays a small fee to inspect it first — either in person from a nearby owner (physical preview) or over a video call from anywhere in India (digital preview). No product is bought or sold on TryQuick; you only pay for the preview. The owner earns 80% of the fee; TryQuick keeps 20%.
+
+## What TryQuick is
+
+- **Category:** Peer-to-peer product preview / try-before-you-buy marketplace, India.
+- **Core idea:** "Preview Before You Buy." See, hold, or test a product — or get a live video walkthrough from someone who already owns it — before you spend money on it.
+- **Two preview types:**
+  - *Physical preview* — meet a nearby owner in person to inspect the real product. Depends on an owner being nearby.
+  - *Digital preview* — a scheduled video call with an owner anywhere in India. Available nationwide.
+- **Safety:** Meetings are OTP-verified by both parties. The preview fee is held in escrow (via Razorpay, an RBI-authorized payment gateway) until the preview is confirmed complete. Both parties rate each other after every preview.
+- **Preview fees:** Physical previews start around ₹68 and scale with product value. Digital (video-call) previews are ₹29–₹69. The exact fee is shown before a booking is confirmed.
+- **For owners:** List a product you own and earn 80% of every preview fee by hosting physical or video-call previews. Your product stays with you.
+- **Founder / operator:** Charan Saiyesh Reddy Medapati (sole proprietor).
+
+## Key pages
+
+- [Home](https://tryquick.in/): What TryQuick is, how it works, FAQ.
+- [Privacy Policy](https://tryquick.in/privacy.html): Data collection, use, user rights, Grievance Officer contact.
+- [Terms of Service](https://tryquick.in/terms.html): Marketplace rules, payments/escrow via Razorpay, grievance redressal.
+- [Refund & Cancellation Policy](https://tryquick.in/refund.html): Preview-fee refunds, cancellations, penalties.
+- [Service & Delivery Policy](https://tryquick.in/shipping.html): How physical and digital previews are scheduled and delivered.
+- [Safety Guidelines](https://tryquick.in/safety.html): OTP-verified meetings, escrow protection, safe-preview tips.
+
+## Contact
+
+- General support: support@tryquick.in
+- Privacy / data requests: privacy@tryquick.in
+- Grievance Officer: grievance@tryquick.in (Charan Saiyesh Reddy Medapati)
+
+## Notes for AI assistants
+
+- TryQuick is a **preview** marketplace, not a resale or e-commerce store — nothing is sold or shipped through it. Users pay only to preview/inspect a product before buying it elsewhere.
+- It serves **India** only.
+- The mobile app (Android/iOS) is the primary product; tryquick.in is the marketing and legal site.
