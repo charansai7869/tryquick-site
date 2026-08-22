@@ -22,11 +22,13 @@
 - [Refund & Cancellation Policy](https://tryquick.in/refund.html): Preview-fee refunds, cancellations, penalties.
 - [Service & Delivery Policy](https://tryquick.in/shipping.html): How physical and digital previews are scheduled and delivered.
 - [Safety Guidelines](https://tryquick.in/safety.html): OTP-verified meetings, escrow protection, safe-preview tips.
+- [Contact](https://tryquick.in/contact.html): Support, Grievance Officer, registered address, specialised contacts.
 
 ## Contact
 
 - General support: support@tryquick.in
 - Privacy / data requests: privacy@tryquick.in
+- Legal / terms: legal@tryquick.in
 - Grievance Officer: grievance@tryquick.in (Charan Saiyesh Reddy Medapati)
 
 ## Notes for AI assistants

@@ -41,7 +41,7 @@
     :root {
       --hero-bg:     #fb8d1f ;
       --hero-mid:    #ffc184;
-      --accent:      #39f64f;
+      --accent:      #4ade80;
       --accent-dark: #248ebc;
       --body-bg:     #fffadb;
       --card-bg:     rgba(255,255,255,0.92);
@@ -207,6 +207,20 @@
     .fee-row:last-child { border-bottom: none; }
     .fee-row span { color: #555; }
     .fee-row strong { color: var(--accent-dark); }
+    .fee-row em { font-style: normal; color: #8a8a8a; font-size: 13px; }
+    .fee-group {
+      background: rgba(91,157,201,0.05);
+      border: 1px solid rgba(91,157,201,0.16);
+      border-radius: 12px; padding: 4px 16px 8px; margin-bottom: 14px;
+    }
+    .fee-group:last-of-type { margin-bottom: 0; }
+    .fee-head {
+      display: flex; justify-content: space-between; align-items: baseline;
+      flex-wrap: wrap; gap: 2px 10px; padding: 12px 0 8px;
+      border-bottom: 1px solid var(--divider);
+    }
+    .fee-kind { font-weight: 800; font-size: 14px; color: var(--text-main); }
+    .fee-where { font-size: 12.5px; color: #777; }
 
     /* TRUST SECTION */
     .trust-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 4px; }
@@ -314,6 +328,32 @@
     <strong style="color:#132218;">📖 Quick note on terms</strong> &nbsp;·&nbsp; On TryQuick, <strong>buyer</strong> means someone who wants a product preview — not someone purchasing anything. <strong>Owner</strong> means someone who owns the product and hosts the preview — not a seller. No product is bought or sold here.
   </div>
 
+  <div class="section" id="fees">
+    <h2>Start With a ₹29 Video Call</h2>
+    <p style="font-size:14px; color:#555; margin: -6px 0 18px; line-height:1.6;">The exact fee is always shown before you confirm a booking. Nothing is charged until you do.</p>
+
+    <div class="fee-group">
+      <div class="fee-head">
+        <span class="fee-kind">📹 Digital preview</span>
+        <span class="fee-where">Video call · anywhere in India</span>
+      </div>
+      <div class="fee-row"><span>Any product, any city</span><strong>₹29–₹69</strong></div>
+    </div>
+
+    <div class="fee-group">
+      <div class="fee-head">
+        <span class="fee-kind">🤝 Physical preview</span>
+        <span class="fee-where">In person · with a nearby owner</span>
+      </div>
+      <div class="fee-row"><span>Dress, shoes, earbuds <em>(₹1,000–₹2,000 product)</em></span><strong>₹68–₹75</strong></div>
+      <div class="fee-row"><span>Smartphone <em>(₹10,000 product)</em></span><strong>₹108</strong></div>
+      <div class="fee-row"><span>Laptop <em>(₹30,000 product)</em></span><strong>₹150</strong></div>
+      <div class="fee-row"><span>DSLR camera <em>(₹60,000 product)</em></span><strong>₹192</strong></div>
+    </div>
+
+    <p style="font-size:13px; color:#666; margin-top:14px; line-height:1.6;">Physical preview fees scale with the product's value — the more expensive the item, the more an owner's time is worth. Digital previews are the same low price whatever you're looking at.</p>
+  </div>
+
   <div class="section" id="how-it-works">
     <h2>How It Works</h2>
     <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Browse Listings</strong><span>Find nearby owners for a physical visit, or browse anyone across India for a video call preview.</span></div></div>
@@ -383,15 +423,6 @@
       <div class="cat">🛋️ Home &amp; Décor</div>
       <div class="cat">📚 Books &amp; More</div>
     </div>
-  </div>
-
-  <div class="section">
-    <h2>Preview Fee Examples</h2>
-    <div class="fee-row"><span>₹1,000–₹2,000 product (dress, shoes, earbuds)</span><strong>₹68–₹75</strong></div>
-    <div class="fee-row"><span>₹10,000 product (smartphone)</span><strong>₹108</strong></div>
-    <div class="fee-row"><span>₹30,000 product (laptop)</span><strong>₹150</strong></div>
-    <div class="fee-row"><span>₹60,000 product (DSLR camera)</span><strong>₹192</strong></div>
-    <div class="fee-row"><span>Digital preview (video call, all India)</span><strong>₹29–₹69</strong></div>
   </div>
 
   <div class="section">
