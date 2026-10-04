@@ -48,7 +48,7 @@
 <div class="hero">
   <div class="logo">TryQuick<span class="logo-dot">.</span></div>
   <h1>Privacy Policy</h1>
-  <div class="date">Effective Date: May 2, 2026 &nbsp;·&nbsp; Last Updated: May 2, 2026</div>
+  <div class="date">Effective Date: May 2, 2026 &nbsp;·&nbsp; Last Updated: October 4, 2026</div>
 </div>
 
 <div class="container">
@@ -70,7 +70,6 @@
       <li>Full name and age</li>
       <li>Profile photograph</li>
       <li>Home location (for matching buyers with nearby owners)</li>
-      <li>Aadhaar card photo and selfie (KYC — for owners offering digital previews only, required by RBI regulations)</li>
       <li>Product listing details: photos, condition, description, pricing</li>
       <li>Booking preferences and slot selections</li>
       <li>Ratings and review text</li>
@@ -96,7 +95,6 @@
       <li>Match buyers with nearby owners for physical previews; match by product availability for digital (video call) previews regardless of location</li>
       <li>Facilitate bookings, slot scheduling, and preview session coordination</li>
       <li>Process preview fee payments and manage escrow via Razorpay</li>
-      <li>Verify owner identity for digital preview eligibility (KYC — RBI compliance)</li>
       <li>Send booking confirmations, payment alerts, and time-sensitive notifications via Firebase FCM</li>
       <li>Calculate preview fees based on product price</li>
       <li>Manage wallet credits, refunds, and owner payouts</li>
@@ -114,11 +112,6 @@
     <p>Aggregated, anonymized location data may be used to analyze user behavior, identify trends, and improve the app's performance and functionality. Anonymized location data may periodically be transmitted to external analytics services.</p>
   </div>
 
-  <div class="section">
-    <h2>Identity Verification (Optional)</h2>
-    <p>Owners may voluntarily submit an Aadhaar card photo and a selfie to receive a Verified badge on their profile. This is entirely optional — it is not required to list products or offer digital previews. Completing verification simply signals additional trustworthiness to preview seekers.</p>
-    <p>Submitted documents are stored securely on Cloudflare R2 (encrypted object storage). Access is restricted to our review team only. Documents are not shared with third parties except as required by law.</p>
-  </div>
 
   <div class="section">
     <h2>Safety Reports &amp; Disputes</h2>
@@ -170,13 +163,12 @@
   <div class="section">
     <h2>Data Retention</h2>
     <ul>
-      <li>Account data: Retained while active and for 90 days after deletion</li>
-      <li>Booking records: 3 years (financial compliance)</li>
+      <li>Account data (name, photo, location, other personal details): retained while your account is active and erased when you delete it</li>
+      <li>Booking records: 8 years (financial compliance)</li>
       <li>Safety reports, disputes, and safety-alert records: 3 years (retained with the booking, for user safety)</li>
-      <li>KYC documents: 5 years (RBI regulatory requirement)</li>
-      <li>Payment transaction records: 7 years (Indian accounting law)</li>
+      <li>Payment and wallet transaction records: 8 years (Indian accounting law)</li>
     </ul>
-    <p>To request deletion of your data, use <strong>Settings → Account Actions → Delete Account</strong> within the app. Financial and KYC records are retained for legal compliance regardless of deletion request.</p>
+    <p>To request deletion of your data, use <strong>Settings → Account Actions → Delete Account</strong> within the app. Your name, photo, location and other personal details are erased; financial and booking records (with your phone number anonymised) are retained for the periods above for legal compliance and dispute resolution.</p>
   </div>
 
   <div class="section">
@@ -193,7 +185,7 @@
 
   <div class="section">
     <h2>Children's Privacy</h2>
-    <p>TryQuick is not intended for users under 13 years of age. The Service Provider does not knowingly collect personally identifiable information from anyone under 13. If you are a parent or guardian and you are aware that your child under 13 has provided us with personal information, please contact us at <a href="mailto:support@tryquick.in">support@tryquick.in</a> and we will delete it from our servers promptly.</p>
+    <p>TryQuick is only for people aged 18 and over. Everyone confirms they are 18 or older when signing up, and the Service Provider does not knowingly collect personal information from anyone under 18. If you are a parent or guardian and you believe your child has given us personal information, please contact us at <a href="mailto:privacy@tryquick.in">privacy@tryquick.in</a> so that we can delete it.</p>
   </div>
 
   <div class="section">
@@ -201,7 +193,7 @@
     <p>The Service Provider is concerned about safeguarding the confidentiality of your information and provides physical, electronic, and procedural safeguards to protect the information we process and maintain:</p>
     <ul>
       <li>HTTPS / TLS for all data in transit</li>
-      <li>Encrypted object storage for KYC documents (Cloudflare R2)</li>
+      <li>Encrypted object storage for photos (Cloudflare R2)</li>
       <li>JWT-based authentication with secure token storage on device</li>
       <li>Role-based database access controls</li>
       <li>Signed URLs for all media (24-hour expiry)</li>
