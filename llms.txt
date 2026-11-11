@@ -1,17 +1,17 @@
 # TryQuick
 
-> TryQuick is an Indian product-preview service. Before buying a product, a customer pays TryQuick a small fee to inspect it first, either in person with a nearby preview partner (physical preview) or over a video call from anywhere in India (digital preview). Each preview is hosted by an independent preview partner who owns the product. No product is bought or sold on TryQuick; you only pay for the preview. TryQuick pays the preview partner 80% of the fee and keeps 20%.
+> TryQuick is an Indian product-preview service. A customer books and pays TryQuick for a short, fixed-fee session in which a TryQuick preview partner shows them a product, either in person nearby (physical preview) or over a video call from anywhere in India (digital preview). No product is bought or sold on TryQuick; you only pay for the preview. TryQuick pays the preview partner 80% of the fee and keeps 20%.
 
 ## What TryQuick is
 
-- **Category:** Product preview / try-before-you-buy service, India.
-- **Core idea:** "Preview Before You Buy." See, hold, or test a product — or get a live video walkthrough from someone who already owns it — before you spend money on it.
+- **Category:** Product preview / demo session service (consumer services), India.
+- **Core idea:** "Book a product preview session." See, hold, or test a product — or get a live video walkthrough of it — so you can decide with confidence.
 - **Two preview types:**
   - *Physical preview* — meet a nearby preview partner in person to inspect the real product. Depends on a preview partner being nearby.
   - *Digital preview* — a scheduled video call with a preview partner anywhere in India. Available nationwide.
 - **Safety:** Every preview is confirmed with an 8-digit code that the customer shares in two steps. The customer pays per booking by UPI through an RBI-authorized payment gateway, and the preview counts as delivered only once the customer shares their code after seeing the product. Both sides rate each other after every preview.
 - **Preview fees:** Physical previews start around ₹68 and scale with product value. Digital (video-call) previews are ₹29–₹69. The exact fee is shown before a booking is confirmed.
-- **For preview partners:** List a product you own and earn 80% of every preview fee by hosting physical or video-call previews. TryQuick pays earnings to your UPI ID on a regular schedule. Your product stays with you.
+- **For preview partners:** Deliver physical or video-call preview sessions for TryQuick and receive 80% of each completed session's fee, paid weekly to your UPI ID.
 - **Founder / operator:** Charan Saiyesh Reddy Medapati (sole proprietor).
 
 ## Key pages
